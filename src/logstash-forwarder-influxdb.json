@@ -1,0 +1,6 @@
+{
+    "paths": [
+        "/var/log/influxdb/influxdb.log"
+    ],
+    "type": "influxdb"
+}
