@@ -16,7 +16,7 @@ mv logstash-forwarder-*.json /etc/logstash-forwarder.d/
 
 ## install influxdb
 mkdir /opt/influxdb
-curl http://s3.amazonaws.com/influxdb/influxdb-0.5.7.amd64.tar.gz | tar -xzf - --strip-components=1 -C /opt/influxdb/
+curl http://s3.amazonaws.com/influxdb/influxdb-0.6.5.amd64.tar.gz | tar -xzf - --strip-components=1 -C /opt/influxdb/
 
 ## set ownership; defaults to 500
 chown -R root:root /opt/influxdb
