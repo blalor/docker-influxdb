@@ -11,8 +11,13 @@ useradd -g influxdb -u 600 -r influxdb
 ## install files
 mv influxdb.toml /etc/
 mv launch-influxdb.sh /usr/local/bin/
-mv program-influxdb.conf /etc/supervisor.d/
+mv program-*.conf /etc/supervisor.d/
 mv logstash-forwarder-*.json /etc/logstash-forwarder.d/
+
+yum localinstall -y http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
+yum install -y nginx
+
+mv nginx.conf /etc/nginx/
 
 ## install influxdb
 mkdir /opt/influxdb
